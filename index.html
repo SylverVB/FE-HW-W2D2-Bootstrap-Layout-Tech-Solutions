@@ -1,0 +1,133 @@
+<!-- Lesson 2: Assignment | Bootstrap Layout
+
+Problem Statement:
+
+Tech Solutions is looking to improve its online presence with a sleek service page that outlines what it offers in a clear and engaging way. 
+The page needs to be responsive, adhering to mobile-first design principles, and should be accessible on all devices without compromising on 
+usability or design.
+
+Task 1: Design the Services Section. Use the grid system to design a services section that showcases at least three services offered by Tech 
+Solutions. Each service should have an icon/image, a title, and a short description. The services should be organized in a row for larger screens 
+and stacked in a column for smaller screens. 
+
+Expected Outcome: A well-structured services section with equally spaced service cards that stack vertically on smaller screens and display in a 
+row on larger screens.
+
+Task 2: About Section with Sidebar Design an 'About Us' section that includes a main content area and a sidebar. The main content should take up 
+two-thirds of the width, while the sidebar occupies one-third. On a smaller screen the sidebar should disappear and only the main content should 
+be displayed. 
+
+Expected Outcome: An 'About Us' section that maintains a two-column layout on medium to large screens and collapses into a single column on smaller 
+screens, ensuring readability and accessibility. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Tech services website" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Fira+Code:wght@300..700&family=Fira+Mono:wght@400;500;700&family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poetsen+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./static/style.css">
+    <title>Tech Solutions</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <div class="container-fluid headernav">
+        <div class="row align-items-center">
+            <header class="col-5 d-flex justify-content-center align-items-center px-0">
+                <img src="./static/images/logo.png" alt="logo">
+                <p><span style="color: #c40c0c;">Tech</span> Solutions</p>
+            </header>
+            <nav class="col-7 d-flex justify-content-center align-items-center px-0">
+                <div class="why">WHY TECH SOLUTIONS?</div>
+                <div class="services">SERVICES</div>
+                <div class="about">ABOUT US</div>
+                <div class="login">
+                    <button>LOGIN</button>
+                </div>
+            </nav>
+        </div>
+        <main class="container-fluid d-flex flex-column px-0 mx-0 main">
+            <div class="row feature-header">
+                <div class="col d-flex flex-column justify-content-center px-0 feature">
+                    <h1>Automation to accelerate sales and delivery of Tech Solutions security services</h1>
+                    <a href="#"><button class="learnmore">LEARN MORE</button></a>
+                </div>
+                <div class="col d-flex flex-column justify-content-start align-items-start px-0 feautre-image">
+                    <img src="./static/images/solution.png" alt="solution" class="techmicrosoft">
+                </div>
+            </div>
+            <h2 class="row justify-content-center align-items-center my-4 services">Tech Solutions Automation Platform
+                Services</h2>
+            <div class="row main-services text-center">
+                <div class="col d-flex flex-column justify-content-center align-items-center">
+                    <img src="./static/images/CloudMigration-Icon.svg" alt="solution" class="cloudmigration">
+                    <h5>Start Right</h5>
+                    <h3>MIGRATIONS</h3>
+                    <h4>Project automation makes migrations safer and easier</h4>
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center">
+                    <img src="./static/images/ProtectData-Icon.svg" alt="solution" class="protectdata">
+                    <h5>Protect Data</h5>
+                    <h3>CLOUD BACKUP</h3>
+                    <h4>Unlimited backup, easy setup, and one-click restore</h4>
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center">
+                    <img src="./static/images/cloud-manager-logo-icon.svg" alt="solution" class="cloudmanager">
+                    <h5>Optimize Operations</h5>
+                    <h3>CLOUD MANAGER</h3>
+                    <h4>Secure and manage SaaS, PaaS, and IaaS services</h4>
+                </div>
+                <div class="col d-flex flex-column align-items-center securitymanager">
+                    <img src="./static/images/security-manager-logo-icon-new.svg" alt="solution"
+                        class="securitymanagerpic">
+                    <h5>Accelerate Security</h5>
+                    <h3>SECURITY MANAGER</h3>
+                    <h4>Easily deliver and monetize Microsoft 365 security</h4>
+                </div>
+            </div>
+        </main>
+
+
+        <footer class="container-fluid d-flex flex-column pt-3">
+            <div class="row align-items-center ">
+                <div class="col-12 col-md-3 d-flex justify-content-center">
+                    <div id="logo">
+                        <img class="img-fluid" src="./static/images/logo.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <a href="#">FAQs</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Policies</a>
+                </div>
+                <div class="col-12 col-md-3 d-flex justify-content-center justify-content-md-end">
+                    <div>
+                        <img src="./static/images/image 5.png" alt="instagram icon">
+                    </div>
+                    <div>
+                        <img src="./static/images/image 7.png" alt="facebook icon">
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+</body>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+</html>
